@@ -55,7 +55,7 @@ public class User extends Object{
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public User(Gender gender) {
         this.gender = gender;
     }
 
@@ -71,20 +71,22 @@ public class User extends Object{
         this.gender = gender;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        User user = (User) obj;
-
-        return user.login.equals(this.login);
-    }
 
     @Override
     public String toString() {
         return firstName + " " + lastName + " " + dateOfBirth;
     }
 
-    @Override
-    public int hashCode() {
-        return login.hashCode();
-    }
+    //@Override
+    //public int hashCode() {
+      //  return login.hashCode();
+    //}
+
+    //@Override
+    //public boolean equals(Object obj) {
+      //  User user = (User) obj;
+
+        //return user.login.equals(this.login);
+    //}
+
 }
