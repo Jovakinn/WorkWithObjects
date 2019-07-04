@@ -8,15 +8,12 @@ import java.util.Date;
 
 public class ApplicationRunner {
 
-    private static final  String PROJECT_DIR_PATH = System.getProperty("user.dir");
-
     public static void main(String[] args) {
 
         Date birthDay = UserGenerationService.getDate(2004,1,5);
         User user = new User("Jovakinn", "12345", "Max", "Khodakov", birthDay, Gender.MALE);
 
-        Item item = new Item("adbdab", "someName",
-                15.05);
+        Item item = new Item("adbdab", "someName", 15.05);
 
         Order order =  new Order(item, 12);
 
