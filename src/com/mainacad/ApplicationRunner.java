@@ -14,9 +14,7 @@ public class ApplicationRunner {
         User user = new User("Jovakinn", "12345", "Max", "Khodakov", birthDay, Gender.MALE);
 
         Item item = new Item("adbdab", "someName", 15.05);
-
         Order order =  new Order(item, 12);
-
         Cart cart = new Cart(user, order, new Date().getTime());
 
         System.out.println(CartSrvice.getTotalSum(cart));
