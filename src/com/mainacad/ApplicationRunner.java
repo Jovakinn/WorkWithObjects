@@ -19,5 +19,6 @@ public class ApplicationRunner {
 
         System.out.println(CartSrvice.getTotalSum(cart));
 
+
     }
 }
